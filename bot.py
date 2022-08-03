@@ -27,7 +27,7 @@ async def group_close():
     try:
         await nmbot.send_message(
                 CHAT_ID,
-                "It's 12:00 AM\nGroup is Closing!"
+                "It's 01:00 AM\nGroup is Closing!"
                 )
         await nmbot.set_chat_permissions(
                 CHAT_ID,
@@ -44,7 +44,7 @@ async def group_open():
     try:
         await nmbot.send_message(
                 CHAT_ID,
-                "It's 6:00 AM\nGroup is opening"
+                "It's 07:00 AM\nGroup is opening"
                 )
         await nmbot.set_chat_permissions(
                 CHAT_ID,
@@ -66,9 +66,9 @@ async def group_open():
 @nmbot.on_message(filters.command("start"))
 async def start(client, message):
     await message.reply(
-            "Heya, I am a NightMode Bot\n**(c) [Reeshuxd](https://github.com/Reeshuxd)**",
+            "Hey Bro, I am a NightMode Bot My Owner @Jackssmit\n**(c) [Developer](https://t.me/Jackssmit)**",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(" My Source Code", url="github.com/Reeshuxd/NightModeBot")]
+                [InlineKeyboardButton(" Jackssmit", url="https://t.me/Jackssmit")]
                 ]
             )
         )
